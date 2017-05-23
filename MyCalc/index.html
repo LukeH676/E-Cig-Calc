@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html ng-app="myCalcu">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/calculator.css">
+	<script type="text/javascript" src="assets/angular.min.js"></script>
+	<script type="text/javascript" src="assets/calculator.js"></script>
+	<title>Calculator</title>
+</head>
+
+<body>
+
+	<div id="myCalc" ng-controller="CalculatorController">
+
+
+		<main>
+			<section class="butts">
+				<div>
+					<h4>Cigarettes Per Year</h4>
+					<p> {{numOfCigs}} </p>
+					<p><span class="fadeText">{{numOfTar}}</span>g of tar</p>
+				</div>
+			</section>
+
+			<section class="cigCost">
+				<div>
+					<h4>Cig Cost</h4>
+					<p>${{perCigCost}} each</p>
+					<p>$<span class="fadeText">{{cost_year}}</span> Per year</p>
+				</div>
+			</section>
+			<section class="temp">
+				<div>
+					<h4>Not sure yet</h4>
+					<p>\\\</p>
+					<p>testing</p>
+				</div>
+			</section>
+			<section class="vapeCost">
+				<div>
+					<h4>30ml Bottles of Liquid</h4>
+					<p>Based on 5ml per day</p>
+					<p><span class="fadeText">{{numBottles}}</span> 30ml Bottles Per year</p>
+				</div>
+			</section>
+			<section class="vapeNic">
+				<div>
+					<h4>Total Cost of liquid per year</h4>
+					<p>$<span class="fadeText">{{vapeCostYear}}</span></p>
+					<p>difference of $<span class="fadeText">{{diff}}</span> Per Year</p>
+				</div>
+
+			</section>
+			<section class="temp1">
+
+				<div>
+					<h4>Starting Nicotine Strength</h4>
+					<p>Based on Cigs Per Day</p>
+					<p><span class="fadeText">{{nicStr}}</span>mg</p>
+				</div>
+			</section>
+
+		</main>
+
+
+		<form>
+			<div>
+
+				<h4>Cigs per day</h4>
+				<p> -- </p>
+				<p>Be Honest!</p>
+				<input ng-change="calculate()" ng-model="current_cPerDay" value="{{current_cPerDay}}" maxlength="3">
+
+
+				</select>
+			</div>
+			<div>
+				<h4> Select Province </h4>
+				<p> ${{current_cost}} per 25 pack </p>
+				<p> {{prov_name}} </p>
+				<select ng-change="calculate()" ng-model="nameTest" ng-options="o as o for o in provinceList">
+
+				</select>
+			</div>
+
+		</form>
+
+
+	</div>
+
+</body>
+
+</html>

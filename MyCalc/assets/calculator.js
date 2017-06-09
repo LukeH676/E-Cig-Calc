@@ -86,15 +86,15 @@
 			$scope.vapeCostYear = ($scope.numBottles * 18.64).toFixed(2);
 			$scope.diff = ($scope.cost_year - $scope.vapeCostYear).toFixed(2);
 
-			if ($scope.current_cPerDay >= 35) {
+			if ($scope.current_cPerDay >= 34) {
 				$scope.nicStr = 24;
-			} else if ($scope.current_cPerDay >= 23 && $scope.current_cPerDay < 30) {
+			} else if ($scope.current_cPerDay >= 23 && $scope.current_cPerDay <= 33) {
 				$scope.nicStr = 18;
 			} else if ($scope.current_cPerDay >= 13 && $scope.current_cPerDay < 23) {
 				$scope.nicStr = 12;
 			} else if ($scope.current_cPerDay >= 8 && $scope.current_cPerDay < 13) {
 				$scope.nicStr = 6;
-			} else if ($scope.current_cPerDay >= 1 && $scope.current_cPerDay < 7) {
+			} else if ($scope.current_cPerDay >= 1 && $scope.current_cPerDay < 8) {
 				$scope.nicStr = 3;
 			} else {
 				$scope.nicStr = 0;

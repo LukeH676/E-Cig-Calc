@@ -20,12 +20,12 @@ background-size: 63px 100px;
 
 #myCalc main::after{ content:''; display: block; clear: both;}
 
-#myCalc main section.butts { background-color: #ba2d2d; background-image: url(images/cig.png); }
-#myCalc main section.cigCost { background-color: #cc3300; background-image: url(images/bulb_hal.svg); }
-#myCalc main section.temp { background-color: #de6615; background-image: url(images/bulb_cfl.svg); }
-#myCalc main section.vapeCost { background-color: #00cc00; background-image: url(images/bulb_led.svg); }
-#myCalc main section.vapeNic { background-color: #00ff00; background-image: url(images/bulb_led.svg); }
-#myCalc main section.temp1 { background-color: #33cc33; background-image: url(images/bulb_led.svg); }
+#myCalc main section.butts { background-color: #ba2d2d; background-image: url(images/Cig1.png); }
+#myCalc main section.cigCost { background-color: #cc3300; background-image: url(images/money.png); }
+#myCalc main section.temp { background-color: #de6615; background-image: url(images/nicotine.png); }
+#myCalc main section.vapeCost { background-color: #00cc00; background-image: url(images/bottle.png); }
+#myCalc main section.vapeNic { background-color: #00ff00; background-image: url(images/money.png); }
+#myCalc main section.temp1 { background-color: #33cc33; background-image: url(images/nicotine.png); }
 
 
 #myCalc main section > div { padding: 5px 0; background-color: rgba(0,0,0,.15); }

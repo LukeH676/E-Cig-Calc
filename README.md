@@ -1,2 +1,4 @@
 # E-Cig-Calc
-Calculator for vaping beginners
+Calculator for beginning E-Cig users. 
+Cost vs Smoking 
+Work in progress
